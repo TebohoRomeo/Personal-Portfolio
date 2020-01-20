@@ -1,0 +1,208 @@
+.header {
+    display: grid;
+    background: url("../img/background.jpg") no-repeat 0;
+    /* background-color: #000; */
+    grid-template-columns: 30% auto 30%;
+    grid-template-rows: 40% auto 20%;
+    height: 400px;
+    padding-bottom: 5%;
+}
+
+.header .logo {
+    grid-column: 1/2;
+    font-size: 20px;
+    font-weight: bold;
+    color: yellow;
+}
+
+.header .logo ul li {
+    float: left;
+    padding: 12px;
+    list-style-type: none;
+}
+
+.header h1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    color: yellow;
+    font-size: 30px;
+    font-weight: 30px;
+}
+
+.header p {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    padding-top: 19%;
+    color: #FFF;
+    font-weight: 30px;
+}
+
+#about {
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+    text-align: center;
+    padding-top: 3%;
+}
+
+#about h1 {
+    grid-column: 2/3;
+}
+
+#about p {
+    font-family: "Montserrat", sans-serif;
+    grid-column: 2/3;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+p a {
+    display: solid;
+    text-decoration: none;
+    color:goldenrod;
+}
+
+.btn-romeo {
+    background-color: blue;
+    border-style: none;
+    padding: 0;
+    height: 40px;
+    width: 150px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.btn-romeo a {
+    display: block;
+    color: #000;
+}
+h4 {
+    color: goldenrod;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.rotate {
+    height: 100px;
+    width: auto;
+    padding-left: -3px;
+    image-orientation: 90deg flip;
+
+    /* image rotattion */
+    transform: rotate(-20deg);
+}
+
+.my-skills {
+    text-align: center;
+}
+
+.skills{
+    background-color: #000;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	justify-items: center;
+	padding: 20px;
+	align-items: center;
+}
+
+.skills img{
+
+	width: 200px;
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.contacts .news-letter {
+    text-align: center;
+    padding-top: 16%;
+}
+
+.footer {
+    display: grid;
+    grid-template-rows: auto;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+}
+
+.romeo-footer p {
+    display: grid;
+    grid-row: auto;
+    padding-top: 1%;
+    height: 30px;
+}
+
+
+@media only screen and (max-width: 788px) {
+
+    .header {
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 20% 40%;
+    }
+
+    .header h1 {
+        grid-column: 1/2;
+    }
+    
+    .header p {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        padding-top: 0;
+    }
+
+    .header .logo {
+        display: grid;
+        justify-items: center;
+        padding-top: 15%;
+        padding-right: 12%;
+        padding-left: 6%;
+        
+    }
+
+    #about {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    
+    #about p {
+        grid-column: 1/2;
+    }
+    
+    #about h1 {
+        grid-column: 1/2;
+    }
+
+    .skills{
+        display: grid;
+        grid-template-columns: 100%;
+        /* padding: 20px; */
+    }
+    
+    .skills img{
+        padding: 20px;
+        width: 150px;
+    }
+
+    .contacts {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 70%;
+    }
+    
+    .contacts .news-letter {
+        text-align: center;
+        padding-top: 2%;
+    }
+
+    .contacts .contact-info {
+        text-align: center;
+        padding-bottom: 5%;
+    }
+    
+  }
