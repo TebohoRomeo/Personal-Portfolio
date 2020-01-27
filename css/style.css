@@ -1,6 +1,6 @@
 .header {
     display: grid;
-    background: url("../img/Moto-Kawasaki-Fantasy-Style-Erotic-Girl-2013-HD-Wallpapers-by-Tony-Kokhan-www.el-tony.com_.jpg") no-repeat 0;
+    background: url("../img/black-girls-wallpapers-4238078.jpg") no-repeat 0;
     /* background-color: #000; */
     grid-template-columns: 30% auto 30%;
     grid-template-rows: 40% auto 20%;
@@ -119,7 +119,7 @@ p a {
 @media only screen and (max-width: 788px) {
 
     .header {
-        background: url("../img/Moto-Kawasaki-Fantasy-Style-Erotic-Girl-2013-HD-Wallpapers-by-Tony-Kokhan-www.el-tony.com_.jpg") no-repeat 0;
+        /* background: url("../img/Moto-Kawasaki-Fantasy-Style-Erotic-Girl-2013-HD-Wallpapers-by-Tony-Kokhan-www.el-tony.com_.jpg") no-repeat 0; */
         grid-template-columns: 100%;
         grid-template-rows: 40% 20% 40%;
     }
