@@ -1,18 +1,11 @@
 .header {
     display: grid;
-    background: url("../img/background.jpg") no-repeat 0;
+    background: url("../img/Moto-Kawasaki-Fantasy-Style-Erotic-Girl-2013-HD-Wallpapers-by-Tony-Kokhan-www.el-tony.com_.jpg") no-repeat 0;
     /* background-color: #000; */
     grid-template-columns: 30% auto 30%;
     grid-template-rows: 40% auto 20%;
     height: 400px;
     padding-bottom: 5%;
-}
-
-.header .logo {
-    grid-column: 1/2;
-    font-size: 20px;
-    font-weight: bold;
-    color: yellow;
 }
 
 .header .logo ul li {
@@ -25,7 +18,7 @@
     grid-column: 2/3;
     grid-row: 2/3;
     text-align: center;
-    color: yellow;
+    color: goldenrod;
     font-size: 30px;
     font-weight: 30px;
 }
@@ -64,7 +57,7 @@ p a {
 }
 
 .btn-romeo {
-    background-color: blue;
+    background-color: rgb(255, 0, 234);
     border-style: none;
     padding: 0;
     height: 40px;
@@ -74,30 +67,14 @@ p a {
 }
 .btn-romeo a {
     display: block;
-    color: #000;
+    color: #edeae5;
 }
-h4 {
-    color: goldenrod;
-    text-align: center;
-    padding-top: 200px;
-}
-
-.rotate {
-    height: 100px;
-    width: auto;
-    padding-left: -3px;
-    image-orientation: 90deg flip;
-
-    /* image rotattion */
-    transform: rotate(-20deg);
-}
-
 .my-skills {
     text-align: center;
 }
 
 .skills{
-    background-color: #000;
+    background-color: #1a1a1a;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr;
@@ -142,6 +119,7 @@ h4 {
 @media only screen and (max-width: 788px) {
 
     .header {
+        background: url("../img/Moto-Kawasaki-Fantasy-Style-Erotic-Girl-2013-HD-Wallpapers-by-Tony-Kokhan-www.el-tony.com_.jpg") no-repeat 0;
         grid-template-columns: 100%;
         grid-template-rows: 40% 20% 40%;
     }
