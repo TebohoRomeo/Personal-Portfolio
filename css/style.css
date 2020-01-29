@@ -32,25 +32,25 @@
     font-weight: 30px;
 }
 
-.about {
+#about {
     display: grid;
     grid-template-columns: 15% auto 15%;
     text-align: center;
     padding-top: 3%;
 }
 
-.about h1 {
+#about h1 {
     grid-column: 2/3;
 }
 
-.about p {
+#about p {
     font-family: "Montserrat", sans-serif;
     grid-column: 2/3;
     font-size: 15px;
     font-weight: lighter;
 }
 
-.about p a{
+#about p a{
     color: #a8324c;
 }
 
