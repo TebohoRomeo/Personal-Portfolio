@@ -32,22 +32,26 @@
     font-weight: 30px;
 }
 
-#about {
+.about {
     display: grid;
     grid-template-columns: 15% auto 15%;
     text-align: center;
     padding-top: 3%;
 }
 
-#about h1 {
+.about h1 {
     grid-column: 2/3;
 }
 
-#about p {
+.about p {
     font-family: "Montserrat", sans-serif;
     grid-column: 2/3;
     font-size: 15px;
     font-weight: lighter;
+}
+
+.about p a{
+    color: #a8324c;
 }
 
 p a {
@@ -117,7 +121,6 @@ p a {
 
 
 @media only screen and (max-width: 788px) {
-
     .header {
         /* background: url("../img/Moto-Kawasaki-Fantasy-Style-Erotic-Girl-2013-HD-Wallpapers-by-Tony-Kokhan-www.el-tony.com_.jpg") no-repeat 0; */
         grid-template-columns: 100%;
@@ -143,16 +146,16 @@ p a {
         
     }
 
-    #about {
+    .about {
         display: grid;
         grid-template-columns: 100%;
     }
     
-    #about p {
+    .about p {
         grid-column: 1/2;
     }
     
-    #about h1 {
+    .about h1 {
         grid-column: 1/2;
     }
 
