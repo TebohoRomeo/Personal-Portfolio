@@ -37,6 +37,7 @@
     grid-template-columns: 15% auto 15%;
     text-align: center;
     padding-top: 3%;
+    height: 500px;
 }
 
 #about h1 {
