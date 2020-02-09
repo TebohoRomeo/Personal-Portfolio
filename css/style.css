@@ -135,7 +135,6 @@ p {
     height: 30px;
 }
 
-
 @media only screen and(max-width: 788px) {
     /* Fuck what was i doing */
     #header {
@@ -224,3 +223,16 @@ p {
         grid-row: 3/4;
     }
   }
+
+  /* 
+           _______ 
+      ____/_______\_____
+         /         \
+        | --    --  |
+        |    **     |         
+         \  _____  /
+          \ _____ /
+
+        Mind Encryption
+
+  */
