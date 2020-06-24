@@ -1,191 +1,208 @@
-html, body {
-    /* height: 100%; */
-    margin: 0;
-     background: #1a1a1a/*linear-gradient(270deg,#C33764, #1D2671); */
-    /* background: url("../img/01232_lazydaysii_1920x1080.jpg") 0; */
-  }
-
-.brand {
+.header {
     display: grid;
-    /* color:linear-gradient(1D2671, #C33764); */
-    grid-template-columns: 10% 1fr 10%;
-    height: auto;
-
- }
-
-.brand h1{
-    color: #edeae5;
-    text-align: center;
-    grid-column: 2/3;
+    background: url("../img/background.jpg") no-repeat 0;
+    /* background-color: #000; */
+    grid-template-columns: 30% auto 30%;
+    grid-template-rows: 40% auto 20%;
+    height: 400px;
+    padding-bottom: 5%;
 }
- .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100%;
-    color: goldenrod;
- }
 
- .container img {
-    display: none;
- }
+.header .logo {
+    grid-column: 1/2;
+    font-size: 20px;
+    font-weight: bold;
+    color: yellow;
+}
 
-.nav {
-    grid-column: 3/4;
-    grid-row: 1/2;
- }
-
- .container .nav ul li {
-    float: right;
-    list-style-type: none;
-    padding: 7%;
- }
-
- .container .nav ul li a {
-    text-decoration: none;
-    color: #edeae5;
-
- }
-
-
- .container .by{
-    grid-column: 2/3;
-    text-align: center;
-    color: #edeae5;
- }
-
- .albums {
-    display: flex;
-    padding: 6%;
-    color: #edeae5;
-  }
- .picture {
+.header .logo ul li {
     float: left;
-    width: 33.33%;
-    height: 3%;
-    padding: 5px;
-  }
-
-.container .nav .btn-romeo{
-    background: #3284f0;
-    height: 15px;
-    width: 200px;
-    grid-row: 1/2;
-    padding: 10%;
+    padding: 12px;
+    list-style-type: none;
 }
-  
-  /* Clear floats after image containers */
-  .albums::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
 
-.picture hr {
-    background: goldenrod;
-    /* display: none; */
-  }
+.header h1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    color: yellow;
+    font-size: 30px;
+    font-weight: 30px;
+}
 
-  .picture h1 {
+.header p {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    padding-top: 19%;
+    color: #FFF;
+    font-weight: 30px;
+}
+
+#about {
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+    text-align: center;
+    padding-top: 3%;
+}
+
+#about h1 {
+    grid-column: 2/3;
+}
+
+#about p {
+    font-family: "Montserrat", sans-serif;
+    grid-column: 2/3;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+p a {
+    display: solid;
+    text-decoration: none;
+    color:goldenrod;
+}
+
+.btn-romeo {
+    background-color: blue;
+    border-style: none;
+    padding: 0;
+    height: 40px;
+    width: 150px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.btn-romeo a {
+    display: block;
+    color: #000;
+}
+h4 {
+    color: goldenrod;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.rotate {
+    height: 100px;
+    width: auto;
+    padding-left: -3px;
+    image-orientation: 90deg flip;
+
+    /* image rotattion */
+    transform: rotate(-20deg);
+}
+
+.my-skills {
     text-align: center;
 }
-  
+
+.skills{
+    background-color: #000;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	justify-items: center;
+	padding: 20px;
+	align-items: center;
+}
+
+.skills img{
+
+	width: 200px;
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.contacts .news-letter {
+    text-align: center;
+    padding-top: 16%;
+}
 
 .footer {
-    /* background:linear-gradient(#C33764, #1D2671); */
-    color: #edeae5;
-    height: 10%;
-}
-
-.footer p {
+    display: grid;
+    grid-template-rows: auto;
     text-align: center;
-    padding: 2%;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    bottom: 0;
 }
 
-/* Responsiveness */
+.romeo-footer p {
+    display: grid;
+    grid-row: auto;
+    padding-top: 1%;
+    height: 30px;
+}
 
-@media only screen and (max-width: 788px){
 
-    .albums {
-        display: grid;
+@media only screen and (max-width: 788px) {
+
+    .header {
         grid-template-columns: 100%;
-        grid-template-rows: 1fr 1fr 1fr;
-        padding: 5%;
+        grid-template-rows: 40% 20% 40%;
     }
 
-    .container {
-        grid-template-columns: 40% 20% 40%;
-        grid-template-rows: 90px;
-        /* grid-template-areas: "by nav" ; */
-        height: 90px;
-        /* overflow: hidden; */
-    }
-
-    .container .nav {
-        grid-column: 2/3;
-        grid-row: 1/2;
-        /*display: none;*/ /*Add javacript tp make this work when pressed*/
-        padding-top:50px;  /* Yes i was inside grid*/
-        justify-self: end;
-
-    }
-
-    /* I added this one below to move thing down*/
-    .albums {
-        padding-top: 30%;
-        color: #edeae5;
-      }
-    .container .by {
-        text-align: center;
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-
-            /* open the one on the below after making sure grid hamburger menu works  */
-
-    /* .container .nav ul {
-        display: none;
-        position: absolute;
-        top: 195px;
-        left: 0;
-        display: grid;
-        grid-template-columns: 100%;
-    } */
-    .container .nav ul li {
-        padding: 13px;
-        text-align: center;
-    }
-
-    .container img {
-        display: block;
-    }
-
-    .picture {
-        float: none;
-        width: 100%;
-        height: 3%;
-        padding: 5px;
-      }
-
-      .picture hr {
-          text-align: center;
-          background: #000;
-          color: #000;
-          width: 90%;
-          height: 0px;
-      }
-
-      .picture h1 {
-          text-align: center;
-      }
-      /* Footer */
-      .footer {
-        height: 10%;
+    .header h1 {
+        grid-column: 1/2;
     }
     
-    .footer p {
-        text-align: center;
-        padding-top: 7%;
+    .header p {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        padding-top: 0;
     }
-    /* End of footer */
-  
-}
+
+    .header .logo {
+        display: grid;
+        justify-items: center;
+        padding-top: 15%;
+        padding-right: 12%;
+        padding-left: 6%;
+        
+    }
+
+    #about {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    
+    #about p {
+        grid-column: 1/2;
+    }
+    
+    #about h1 {
+        grid-column: 1/2;
+    }
+
+    .skills{
+        display: grid;
+        grid-template-columns: 100%;
+        /* padding: 20px; */
+    }
+    
+    .skills img{
+        padding: 20px;
+        width: 150px;
+    }
+
+    .contacts {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 70%;
+    }
+    
+    .contacts .news-letter {
+        text-align: center;
+        padding-top: 2%;
+    }
+
+    .contacts .contact-info {
+        text-align: center;
+        padding-bottom: 5%;
+    }
+    
+  }
